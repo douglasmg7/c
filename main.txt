@@ -17,6 +17,11 @@
 %p      # address
 %s      # string
 
+# sizeof operator, can use the type name or a variable.
+int i = 0;
+sizeof(i);
+sizeof(int);
+
 # definition != declaration
 int val;            # Definition
 val = 3;            # Initialization
