@@ -17,3 +17,42 @@ Dynamic
     Memory is allocated from the heap and can be released as necessary. A pointer references the allocated memory.
     The scope is limited to the pointer or pointers that refence the memory.
     It exists until it is released.
+
+
+If a pointer is declared as Global or Static, it is initialized to NULL when the program starts.
+int *globalpi;
+
+void foo() {
+    static int *staticpi;
+}
+
+
+The size of a pointer to a function can be different from the size of a pointer to data.
+
+
+Predefined pointer-related types.
+size_t
+    To provide a safe type for sizes
+ptrdiff_t
+    To handle pointer arithmetic
+intptr_t, uintptr_t
+    To storing pointer addresses
+
+
+size_t
+    Represents the maximum size any object can be in C.
+    It is a unsigned integer.
+    Its purpose is to provide a portable means of declaring a size consistent with the addressable area of memory available on a system.
+    The size_t is used as the return type for the "sizeof" operator and as the argument to many functions, including "malloc" and "strlen", among others.
+    Use of size_t:
+        Good practice
+            Number of characters
+            Array indexes
+        Should
+            Loop counters
+            Indexing into arrays
+        Sometimes
+            Pointer arithmetic 
+
+        
+    
