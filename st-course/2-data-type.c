@@ -6,7 +6,7 @@
 int main(void) {
     // Integers.
     printf(":: Values in byte\n");
-    // This is a integer data tupe used to store a single character(ASCII code) value or 1 byte of signed or unsigned integer value.
+    // This is a integer data type used to store a single character(ASCII code) value or 1 byte of signed or unsigned integer value.
     // There is no other special meaning for the char type, and it is just another integer data type.
     printf("char: %lu\n", sizeof(char));    // Always 1 byte.
     printf("short: %lu\n", sizeof(short));  // Always 2 bytes.
