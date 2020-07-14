@@ -4,10 +4,10 @@ When a c programming is compiled, it works with three types of memory.
     Dynamic / Heap
 
 Static
-    Statically declared variables are allocated to this type of memory.
+    Statically declared variables inside functions are allocated to this type of memory.
     Global variables also use this region of memory.
     They are allocated when the program starts and remain in existence until the program finish.
-    While all function have access to global variablesr, the scope of static variables is restricted to their defining function.
+    While all function have access to global variables, the scope of static variables is restricted to their defining function.
 
 Automatic
     These variables are declared within function and are created when a function is called.
@@ -53,6 +53,29 @@ size_t
             Indexing into arrays
         Sometimes
             Pointer arithmetic 
+    For print size_t use:
+        %zu
+        %lu
+        %u
+
+The declaration of size_t is implementation specific, it can be found in stdio.h and stdlib.h.
+Typically defined as follows:
+#ifndef __SIZE_T
+#define __SIZE_T
+typedef unsigned int size_t;
+#endif
+
+Use sizeof operator to determine the size of a pointer:
+printg("Size of *char: %d\n", sizeof(char*));
+
+intptr_t and uintptr_t are used to for storing pointer addresses:
+int num;
+intptr_t *pi = &num;
+
+Adding a integer to a pointer:
+The amount added is the product of the integer times the number of bytes of the underlying data type.
+
+
 
         
     
