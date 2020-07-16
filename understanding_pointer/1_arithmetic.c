@@ -1,3 +1,4 @@
+#include <stddef.h>
 #include <stdio.h>
 
 int main(){
@@ -24,5 +25,16 @@ int main(){
     printf("%d\n", *pi);
     printf("%p\n\n", pi);
 
+    /*
+       The ptrdiff_t is a portable way to express the difference between two pointers.
+    */
+    int* p2 = vector + 1;
+    ptrdiff_t diff = p2 - vector;
+    printf("Diff between pointers: %td\n", diff); 
+
+    /*
+       Comparing pointers.
+    */
+    printf("Is p2 a head of vector: %d\n", p2>vector); 
     return 0;
 }
