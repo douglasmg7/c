@@ -24,16 +24,20 @@ int main() {
     printf("** Data copied\n");
     strcpy(pc, "oi");
     printCharPointer(pc, 3);
+    free(pc);
+    pc = NULL;
 
     /*
        calloc - allocate and clear memory.
        void* calloc(size_t num_elements, size_t element_size)
     */
-    free(pc);
     pc = (char*)calloc((strlen("oi") + 1), sizeof(char));
     printf("** calloc\n");
     printCharPointer(pc, 3);
+    // Not necessary, progaram finshed, but it is a good practice.
     free(pc);
+    pc = NULL;
+
     return 0;
 }
 
