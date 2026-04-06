@@ -1,6 +1,16 @@
 # Compile flags - create main.i, main.s, main.o files
 -save-temps     
 
+# main.i from main.c
+File resulted from pre-processing stage (compile process the #include for example).
+
+# main.s
+File converted to assembly language.
+
+# main.o
+Machine code that is called object file too.
+
+
 # Escape sequence Null
 \0
 
@@ -32,7 +42,7 @@ extern
 static
 
 # Inclui uma biblioteca padrão <>.
-include <sdtio.h>   
+include <stdio.h>   
 
 # Define a constant
 #define PI 3.14159 
