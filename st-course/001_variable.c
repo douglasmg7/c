@@ -3,7 +3,7 @@
     Variable acts as a label to a memory location where the data is stored.
 
     Variable is declered 
-        When when the compiler is informed that a variable exists along with its type.
+        When the compiler is informed that a variable exists along with its type.
         The compiler does not generate instructions to allocate the storage for the variable at that point.
 
     Variable is defined

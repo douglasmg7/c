@@ -8,8 +8,11 @@ int main(){
     printf("Min value: %x\n", ic);
     printf("Min value: %d\n", ic);
     ic = 0xff;
-    printf("Max value: %x\n", ic);
+    printf("Max value: %c\n", ic);
     printf("Max value: %d\n", ic);
+    printf("Max value: %x\n", ic);
+    printf("Max value: %X\n", ic);
+    printf("Max value in octal: %o\n", ic);
 
     // Signed - more significant bit is the sign.
     printf("** Signed char **\n");
@@ -26,4 +29,16 @@ int main(){
 
     c = 0b10000000;
     printf("Max negative value: %d\n", c);
+
+    printf("Max negative value in octal: %o\n", c);
+
+    // Signed - more significant bit is the sign, the more left digit.
+    char c2 = 0b01010101;
+    printf("c2: %d\n", c2);
+    // Add one.
+    c2 = 0b01010110;
+    printf("c2+1: %d\n", c2);
+    // Change sign - toggle all bits.
+    c2 = 0b10101001;
+    printf("-c2: %d\n", c2);
 }

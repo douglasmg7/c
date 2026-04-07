@@ -32,10 +32,16 @@ int i = 0;
 sizeof(i);
 sizeof(int);
 
-# Definition != declaration
-int val;            # Definition
-val = 3;            # Initialization
-extern int val;     # Declaration
+# Variable definition
+int val;
+
+# Variable initialization
+val = 3;
+
+# Variable declaration
+extern int val;
+extern - Mean that the variable is defined outside the scope of the file.
+The compile does not generate instruction to allocate the storage for the variable.
 
 # Storage class specifiers
 extern

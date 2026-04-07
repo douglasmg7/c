@@ -2,6 +2,11 @@
 /*
     Data type is used to declare the type of a variable.
     Data type determine the type and size of data associated with a variable.
+
+    These data types will always be fixed size irrespective of compilers:
+        char is always 1 bytes
+        short is always 2 bytes
+        long long is always 8 bytes
 */
 int main(void) {
     // Integers.
@@ -20,6 +25,6 @@ int main(void) {
     var1 = 0;
 
     signed int a = 3;
-    printf("a: %d\n", a);
-    printf("a: %u\n", a);
+    printf("a: %d - %lu bytes\n", a, sizeof(a));
+    /* printf("a: %u\n", a); */
 }
