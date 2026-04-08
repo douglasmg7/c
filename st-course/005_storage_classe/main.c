@@ -1,8 +1,6 @@
 #include <stdio.h>
-/*
-*/
+#include "file_2.h"
 
-void file_2_func();
 static void change_clock();
 
 int mainPublicData;
